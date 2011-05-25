@@ -2,6 +2,7 @@ How to use find
 ===============
 
 find [DIRECTORY] [OPTS]
+
 * --help -h       show this help
 * --name -n       find by regex name '--name .*\.js$'
 * --type -t       find by file type, f - file, d - directory, l - symlink, s - socket '--type f'
