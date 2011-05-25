@@ -1,0 +1,4 @@
+Sitemap: http://waysgo.com/sitemap_index.xml.gz
+
+User-Agent: *
+Disallow: /

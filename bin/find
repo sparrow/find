@@ -1,0 +1,25 @@
+#!/usr/bin/ruby
+# -*- coding: utf-8 -*-
+
+BIN_DIR = File.dirname(__FILE__)
+lib_path = File.expand_path("#{BIN_DIR}/../lib")
+$LOAD_PATH.unshift lib_path unless $LOAD_PATH.include?(lib_path)
+
+require 'find'
+
+class App
+  include Find
+  
+  def initialize argv
+    @argv = argv
+  end
+  
+  def run
+    p = Parser.new(@argv)
+    f = Finder.new(p.to_params)
+    f.find
+    puts f.to_s
+  end
+end
+
+App.new(ARGV).run
