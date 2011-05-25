@@ -45,7 +45,7 @@ def all_files
 end
 
 def find_with_max_depth_2_result
-  files = ["factories/public", "factories/public/images", "factories/public/images/icons", "factories/public/images/jquery", "factories/public/images/open_id", "factories/public/javascripts", "factories/public/jquery_images", "factories/public/robots.txt"]
+  files = ["factories/public", "factories/public/images", "factories/public/images/icons", "factories/public/images/jquery", "factories/public/images/open_id", "factories/public/javascripts", "factories/public/javascripts/admin", "factories/public/javascripts/common", "factories/public/javascripts/facebook.js", "factories/public/jquery_images", "factories/public/robots.txt"]
   create_full_path files
 end
 
